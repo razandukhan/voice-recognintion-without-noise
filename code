@@ -2,7 +2,7 @@ import speech_recognition as sr
 from playsound import playsound
 r = sr.Recognizer()
 jackhammer = sr.AudioFile('audio_files_jackhammer (1).wav')
-playsound('C:/Users/Classic/Downloads/audio_files_jackhammer (1).wav')
+playsound('audio_files_jackhammer (1).wav')
 with jackhammer as source:
        r.adjust_for_ambient_noise(source, duration=0.5)
        audio = r.record(source)
